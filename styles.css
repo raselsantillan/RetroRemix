@@ -1,21 +1,26 @@
 
 @font-face {
-    font-family: "GT Pressura Mono";
+    font-family: "GT Pressura Mono Regular";
     src: url("font/GT-Pressura-Mono-Regular.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: "GT Pressura Mono Bold";
+    src: url("font/GT-Pressura-Mono-Bold.woff2") format("woff2");
+}
+
 body {
-    font-family: "GT Pressura Mono", sans-serif;
+    font-family: "GT Pressura Mono Regular", sans-serif;
     margin: 0;
     padding: 0;
     position: relative;
 }
 
-.body {
+.page-body {
     background-color: #D45456;
 }
 
-.wrapper{
+.page-wrapper{
     background-color: #D45456;
     width: 1300px;
     margin: 0 auto;
@@ -23,18 +28,18 @@ body {
     position: relative;
 }
 
-.header {
+.page-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
 
-.retro-link a{
+.brand-link a{
+    font-family: "GT Pressura Mono Bold", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     color: #e9e3d7;
-    font-weight: 700;
     font-size: 30px;
 }
 
@@ -72,7 +77,7 @@ body {
     margin-top: 450px;
 }
 
-.introductory img {
+.intro-section img {
     width: 100%;
     position: absolute;
     top: 370px;
@@ -81,12 +86,12 @@ body {
     z-index: 0;
 }
 
-.body-main {
+.main-content {
     background-color: #E9E4D9;
     border-top: 1px solid #3A3A3A;
 }
 
-.wrapper-main {
+.content-wrapper {
     min-height: 500px;
     background-color: #E9E4D9;
     width: 1300px;
@@ -101,7 +106,6 @@ body {
     border-radius: 5px;
     min-height: 50px;
     margin: 10px 10px 10px 0px;
-    background-color: #E9E4D9;
 }
 
 .sidebar h1 {
@@ -122,7 +126,6 @@ body {
 .sidebar ul li {
     margin: 0;
     text-align: center;
-   
 }
 
 .sidebar ul li a {
@@ -139,31 +142,31 @@ body {
     background-color: #3A3A3A;
 }
 
-.overview {
+.overview-section {
     margin: 0 auto;
     max-width: 800px;
     padding: 0 20px;
     text-align: justify;
 }
 
-.overview, .posters {
+.overview-section, .poster-section {
     margin-bottom: 120px;
 }
 
-.overview h2 {
+.overview-section h2 {
     color: #3A3A3A;
     font-size: 48px;
-    font-weight: 700;
+    font-family: "GT Pressura Mono Bold", sans-serif;
     margin-bottom: 25px;
     text-transform: uppercase;
 }
 
-.overview p{
+.overview-section p{
     font-size: 18px;
     line-height: 1.5;
 }
 
-.posters h2 {
+.poster-section h2 {
     color: #F5F2ED;
     font-size: 48px;
     margin-bottom: 10px;
@@ -195,7 +198,7 @@ body {
     height: auto;
 }
 
-.caption {
+.see-more-link {
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
@@ -210,13 +213,13 @@ body {
     color: #3A3A3A;
 }
 
-.caption:hover {
+.see-more-link:hover {
     background-color: #D45456;
     border: 1px solid #D45456;
     color: #E9E4D9;
 }
 
-.resource-banner img {
+.resource-section img {
     border: 1px solid#3A3A3A; 
     border-radius: 5px;
     width: 90%;
@@ -224,12 +227,12 @@ body {
     margin: 0 auto;
 }
 
-.resource-banner {
+.resource-section {
     position: relative;
     margin-bottom: 85px;
 }
 
-.resource-banner a {
+.resource-section a {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 20px;
@@ -243,7 +246,7 @@ body {
     padding: 5px 10px;
 }
 
-.resource-banner a:hover {
+.resource-section a:hover {
     background-color: #D45456; 
     border: 1px solid #D45456;
     color: #E9E4D9;
@@ -251,11 +254,11 @@ body {
 
 /* About */
 
-.body-about {
+.about-body {
     background-color: #E9E4D9;
 }
 
-.wrapper-about{
+.about-wrapper{
     background-color: #E9E4D9;
     width: 1300px;
     margin: 0 auto;
@@ -263,33 +266,33 @@ body {
     min-height: 1800px;
 }
 
-.header-about {
+.about-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
 
-.retro-link-about a{
+.about-brand-link a{
+    font-family: "GT Pressura Mono Bold", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     color: #3A3A3A;
-    font-weight: 700;
     font-size: 30px;
 }
 
-.nav-about ul{
+.about-nav ul{
     margin: 0;
     padding: 10px 0;
     float: right;
 }
 
-.nav-about ul li{
+.about-nav ul li{
     list-style-type: none;
     display: inline-block; 
 }
 
-.nav-about ul li a{
+.about-nav ul li a{
     text-transform: uppercase;
     text-decoration: none;
     color: #3A3A3A;
@@ -299,15 +302,15 @@ body {
     padding: 10px;
 }
 
-.nav-about ul li a:hover{
+.about-nav ul li a:hover{
     text-decoration: underline;
 }
 
-.nav-about ul li a.active {
+.about-nav ul li a.active {
 	color: #D45456;
 }
 
-.about img {
+.about-section img {
     width: 60%;
     position: relative;
     top: 125px;
@@ -359,18 +362,18 @@ body {
     padding: 5px 20px 5px 20px;
 }
 
-.team_text-style-medium {
+.card-title {
     font-size: 1.2rem;
     text-transform: uppercase;
     padding-bottom: 10px;
     border-bottom: 1px solid #3A3A3A;
 }
 
-.caption-cards {
+.read-more-caption {
     margin-top: 5px;
 }
 
-.read-more-cards {
+.read-more-text {
     font-weight: 700;
     color: #D45456;
 }
@@ -399,12 +402,12 @@ body {
 
 /* About */
 
-.footer {
+.page-footer {
     background-color: #F5F2ED;
     border-top: 1px solid #3A3A3A;
 }
 
-.wrapper-footer {
+.footer-wrapper {
     clear: both;
     background-color: #F5F2ED;
     width: 1300px;
@@ -412,42 +415,41 @@ body {
     padding: 40px;
 }
 
-.footer-navigation {
+.footer-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     text-decoration: none;
-    font-weight: 700;
 }
 
-.footer-section h3 {
+.footer-links h3 {
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 10px;
-    text-align: left;
+    color: #3B3B3B;
 }
 
-.footer-section ul {
+.footer-links ul {
     list-style: none;
     padding: 5px 0;
     font-size: 16px;
 }
 
-.footer-section ul li {
+.footer-links ul li {
     margin-bottom: 10px;
     padding: 3px 0;
 }
 
-.footer-section ul li a {
+.footer-links ul li a {
     text-decoration: none;
     color: #3B3B3B;
 }
 
-.footer-section ul li a:hover {
+.footer-links ul li a:hover {
     text-decoration: underline;
 }
 
-.footer-section ul li img {
+.footer-links ul li img {
     width: 20px;
     height: 20px;
     margin-right: 5px;
@@ -459,6 +461,7 @@ body {
     margin: 10px auto;
     color: #3B3B3B;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .footer-join h4 {
@@ -524,5 +527,4 @@ body {
 .footer-disclaimer p {
     margin: 0;
     font-size: 14px;
-    font-weight: 500;
 }

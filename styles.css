@@ -211,7 +211,8 @@ body {
 }
 
 .caption:hover {
-    background-color: #D45456; 
+    background-color: #D45456;
+    border: 1px solid #D45456;
     color: #E9E4D9;
 }
 
@@ -244,6 +245,7 @@ body {
 
 .resource-banner a:hover {
     background-color: #D45456; 
+    border: 1px solid #D45456;
     color: #E9E4D9;
 }
 
